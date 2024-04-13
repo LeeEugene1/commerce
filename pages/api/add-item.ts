@@ -4,10 +4,10 @@ const { Client } = require('@notionhq/client')
 
 // Initializing a client
 const notion = new Client({
-  auth: 'secret_GVSGKVqg6U6G6ifWKE3ZvrKuzv5XcOOoY0eZPr3NWSi',
+  auth: '',
 })
 
-const databaseId = '70112d0ee5ad4f16b0ed5c1cda47fe48'
+const databaseId = ''
 
 const addItem = async (name: string) => {
   try {
