@@ -39,7 +39,8 @@ model Products {
   name String
   image_url String?
   category_id Int
-
+  created_at DateTime @default(now())
+  updated_at DateTime @default(now())
   @@index([category_id])
 }
 

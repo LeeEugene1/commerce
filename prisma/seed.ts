@@ -23,18 +23,12 @@ async function seedData(c: any, id: number) {
     const res = await prisma.products.create({ data: productData })
     console.log(res)
   })
-
-  //   for (const item of liquid) {
-  //     const productData = getProductData(item)
-  //     const res = await prisma.products.create({ data: productData })
-  //     console.log(res)
-  //   }
 }
 async function main() {
-  //   await seedData(gel, 1)
-  //   await seedData(pancil, 2)
+  await seedData(gel, 1)
+  await seedData(pancil, 2)
   await seedData(cream, 3)
-  //   await seedData()
+  await seedData(liquid, 4)
 
   //   const arr = ['liquid', 'pancil', 'gel', 'cream']
   //   arr.forEach(async (e) => {
