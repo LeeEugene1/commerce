@@ -8,27 +8,21 @@ const notion = new Client({
 })
 
 const databaseId = process.env.DB_ID
-
-const addItem = async (name: string) => {
+// const pageId = process.env.DB_PAGD_ID
+const getItem = async () => {
   try {
-    const response = await notion.pages.create({
-      parent: {
-        type: 'database_id',
-        database_id: databaseId,
-      },
-      properties: {
-        Name: {
-          title: [
-            {
-              text: {
-                content: name,
-              },
-            },
-          ],
+    const response = await notion.databases.query({
+      database_id: databaseId,
+      sorts: [
+        {
+          property: 'Price',
+          direction: 'ascending',
         },
-      },
+      ],
     })
-    console.log(response)
+    console.log('dddd', response)
+
+    return response
   } catch (error) {
     console.error(JSON.stringify(error))
   }
@@ -42,13 +36,9 @@ export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>,
 ) {
-  const { name } = req.query
-  if (name === null) {
-    res.status(400).json({ message: 'no name' })
-  }
   try {
-    await addItem(String(name))
-    res.status(200).json({ message: `success! ${name} added` })
+    const response = await getItem()
+    res.status(200).json({ message: response.results })
   } catch (error) {
     res.status(400).json({ message: 'error' })
   }
