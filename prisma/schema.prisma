@@ -1,0 +1,50 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id    Int    @id @default(autoincrement())
+  email String @unique
+  name  String
+  posts Post[]
+}
+
+model Post {
+  id        Int     @id @default(autoincrement())
+  title     String
+  content   String
+  published Boolean
+  user      User    @relation(fields: [userId], references: [id])
+  userId    Int
+}
+
+model Categories {
+  id Int @id @default(autoincrement())
+  name String
+}
+
+model Products {
+  id Int @id @default(autoincrement())
+  name String
+  image_url String?
+  category_id Int
+
+  @@index([category_id])
+}
+
+  //category_id 4:liquid, 2:pancil, 1:gel, 3:cream
+//모델만든후 마이그레이션
+//npx prisma migrate dev --name init
+//조회
+//npx prisma studio

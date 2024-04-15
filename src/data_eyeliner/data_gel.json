@@ -1,0 +1,79 @@
+{
+  "items": [
+    {
+      "id": 1021,
+      "brand": "marienatie",
+      "name": "Gel Liner",
+      "price": "0.0",
+      "price_sign": "$",
+      "currency": "USD",
+      "image_link": "https://www.purpicks.com/wp-content/uploads/csm/Photo10_12001.jpg",
+      "product_link": "https://www.purpicks.com/product/marie-natie-gel-liner/",
+      "website_link": "https://purpicks.com/",
+      "description": "This smooth and creamy formula from MarieNatie will provide a silky soft and non-oily finish. It glides on evenly to deliver immediate results.",
+      "rating": null,
+      "category": "gel",
+      "product_type": "eyeliner",
+      "tag_list": ["purpicks", "CertClean", "Vegan", "Gluten Free"],
+      "created_at": "2018-06-30T19:19:30.898Z",
+      "updated_at": "2018-09-02T22:52:06.494Z",
+      "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/1021.json",
+      "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/021/original/open-uri20180630-4-10sgmvz?1530390373",
+      "product_colors": [{ "hex_value": "#000000", "colour_name": "Black" }]
+    },
+    {
+      "id": 966,
+      "brand": "nyx",
+      "name": "Cosmic Gel Liner",
+      "price": "10.0",
+      "price_sign": "$",
+      "currency": "USD",
+      "image_link": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw62a7d3b0/ProductImages/2016/Eyes/Cosmic_Gel_Liner/800897016364_cosmicgelliner_interstellar_main.jpg?sw=390\u0026sh=390\u0026sm=fit",
+      "product_link": "https://www.nyxcosmetics.com/cosmic-gel-liner/NYX_335.html?cgid=eyeliner",
+      "website_link": "https://www.nyxcosmetics.com",
+      "description": "Swap your standard wing for eyes that twinkle like stars! A beam of Cosmic Gel Eye Liner makes an out of this world statement through an intense burst of sparkle and bold color. Available in three shades packed with interstellar shimmer, this formula glides on silky-smooth and is super easy to blend. Like our fan fave Gel Liner and Smudger, these rich colors stay put for strong galactic glam.",
+      "rating": null,
+      "category": "gel",
+      "product_type": "eyeliner",
+      "tag_list": [],
+      "created_at": "2017-12-24T02:32:26.896Z",
+      "updated_at": "2017-12-24T02:32:27.267Z",
+      "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/966.json",
+      "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/966/original/open-uri20171224-4-kpqxp4?1514082746",
+      "product_colors": [
+        { "hex_value": "#D64262", "colour_name": "Interstellar" },
+        { "hex_value": "#06ADE4", "colour_name": "Supernatural" },
+        { "hex_value": "#262B51", "colour_name": "Infinite Star" }
+      ]
+    },
+    {
+      "id": 965,
+      "brand": "nyx",
+      "name": "Gel Liner And Smudger",
+      "price": "9.0",
+      "price_sign": "$",
+      "currency": "USD",
+      "image_link": "https://www.nyxcosmetics.com/dw/image/v2/AANG_PRD/on/demandware.static/-/Sites-cpd-nyxusa-master-catalog/default/dw7fa3d736/ProductImages/Eyes/Gel_Liner_And_Smudger/gellinerandsmudger_main.jpg?sw=390\u0026sh=390\u0026sm=fit",
+      "product_link": "https://www.nyxcosmetics.com/gel-liner-and-smudger/NYX_080.html?cgid=eyeliner",
+      "website_link": "https://www.nyxcosmetics.com",
+      "description": "Our Gel Liner \u0026 Smudger delivers bold color that won’t quit. Whether you’re after a perfectly defined line or a smokey eye, these silky shades blend easily and don’t crease or fade. This pigmented formula is now available in two brand new shades.",
+      "rating": null,
+      "category": "gel",
+      "product_type": "eyeliner",
+      "tag_list": [],
+      "created_at": "2017-12-24T02:32:25.619Z",
+      "updated_at": "2017-12-24T02:32:25.974Z",
+      "product_api_url": "https://makeup-api.herokuapp.com/api/v1/products/965.json",
+      "api_featured_image": "//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/000/965/original/open-uri20171224-4-8mqi9p?1514082745",
+      "product_colors": [
+        { "hex_value": "#E8E7E3", "colour_name": "Emma" },
+        { "hex_value": "#444444", "colour_name": "Betty" },
+        { "hex_value": "#725C47", "colour_name": "Charlotte" },
+        { "hex_value": "#03C7B9", "colour_name": "Danielle" },
+        { "hex_value": "#496CBE", "colour_name": "Samantha" },
+        { "hex_value": "#512F16", "colour_name": "Scarlette" },
+        { "hex_value": "#583668", "colour_name": "Annie" }
+      ]
+    }
+  ]
+}
