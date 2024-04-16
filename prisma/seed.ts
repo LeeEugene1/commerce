@@ -9,10 +9,11 @@ const prisma = new PrismaClient()
 async function seedData(c: any, id: number) {
   //category_id 4:liquid, 2:pancil, 1:gel, 3:cream
   const getProductData = (item: any) => {
-    const { name, price, image_link } = item
+    const { name, price, description, image_link } = item
     return {
       name,
-      //   price,
+      price,
+      description,
       image_url: image_link,
       category_id: id,
     }
